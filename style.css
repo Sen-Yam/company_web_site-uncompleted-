@@ -1,0 +1,55 @@
+body div  h1{
+    color: white;
+    font-weight: bold;
+     margin-left: 100px; 
+    
+}
+.btn {
+    border: none;
+    background-color: rgb(122, 85, 192);
+    font-size: 17px;
+    margin-left: 20px;
+    color: white;
+}
+.container {
+    display: flex;
+    height : 100px;
+    right: 0px;
+    
+    margin-top: 20px;
+    
+    background-color: rgb(122, 85, 192);
+}
+body div div input {
+    border: 1px solid white;
+    padding: 5px;
+    display: none;
+    border-radius: 3px;
+    position: absolute;
+    background-color: white;
+    width: 100px;
+    height: 20px;
+    margin-left: 590px;
+    margin-top: 60px;
+}
+
+.modale {
+    position: absolute;
+     background-color: rgba(164, 71, 240, .6);
+    height: 700px;
+    left : 0px;
+    right: 0px;
+    width : 1333px;
+    margin-left: 8px;
+}
+.img {
+    background-repeat: no-repeat;
+    background-size: over;
+   height: 700px;
+    left : 0px;
+    right: 0px;
+    top: 0px;
+    flex-direction: column;
+   
+     background-image: url(../devwebsite/photos/desktop.jpg);
+}
