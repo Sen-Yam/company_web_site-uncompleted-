@@ -94,6 +94,77 @@ document.querySelector('.info').onmouseout= function color() {
     document.querySelector('.info').style.color='black';
 }
 
+document.querySelector('.f1').children[7].onclick= function submit1(e) {
+    e.preventDefault();
+    var N=true;
+    var email=true;
+    var password=true;
+    if(document.querySelector('.f1').children[2].value=="") {
+        N=false;
+        document.querySelector('.f1').children[2].classList.remove('in');
+        document.querySelector('.f1').children[2].classList.add('error');
+        document.querySelector('.f1').children[2].onlick= function remove() {
+        document.querySelector('.f1').children[2].classList.remove('error');
+        document.querySelector('.f1').children[2].classList.add('in'); 
+        
+        }
+    }
+        if(document.querySelector('.f1').children[4].value=="") {
+            email=false;
+            document.querySelector('.f1').children[4].classList.remove('in');
+            document.querySelector('.f1').children[4].classList.add('error');
+            document.querySelector('.f1').children[4].onlick= function remove() {
+            document.querySelector('.f1').children[4].classList.remove('error');
+            document.querySelector('.f1').children[4].classList.add('in'); 
+            
+            }
+        }
+            if(document.querySelector('.f1').children[6].value=="") {
+                password=false;
+                document.querySelector('.f1').children[6].classList.remove('in');
+                document.querySelector('.f1').children[6].classList.add('error');
+                document.querySelector('.f1').children[6].onlick= function remove() {
+                document.querySelector('.f1').children[6].classList.remove('error');
+                document.querySelector('.f1').children[6].classList.add('in'); 
+                }
+    }
+      if(email==true && password==true && N==true) {
+        document.querySelector('.f1').children[7].innerHTML='already submitted';
+    }
+}
 
 
-console.log(document.querySelector('.f1').children[0].children[1]);
+document.querySelector('.f2').children[5].onclick= function submit2(e) {
+    e.preventDefault();
+    var N=true;
+    var password=true;
+    if(document.querySelector('.f2').children[2].value=="") {
+        N=false;
+        document.querySelector('.f2').children[2].classList.remove('in');
+        document.querySelector('.f2').children[2].classList.add('error');
+        document.querySelector('.f2').children[2].onlick= function remove() {
+        document.querySelector('.f2').children[2].classList.remove('error');
+        document.querySelector('.f2').children[2].classList.add('in'); 
+        
+        }
+    }
+        if(document.querySelector('.f2').children[4].value=="") {
+            password=false;
+            document.querySelector('.f2').children[4].classList.remove('in');
+            document.querySelector('.f2').children[4].classList.add('error');
+            document.querySelector('.f2').children[4].onlick= function remove() {
+            document.querySelector('.f2').children[4].classList.remove('error');
+            document.querySelector('.f2').children[4].classList.add('in'); 
+            
+            }
+        }
+      if( password==true && N==true) {
+        document.querySelector('.f2').children[5].innerHTML='already submitted';
+    }
+}
+    
+    
+
+
+
+console.log(document.querySelector('.f2').children);
