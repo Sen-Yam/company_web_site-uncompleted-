@@ -166,3 +166,95 @@ body div div input {
     grid-template-columns: 450px 450px 400px ;
     grid-template-rows: repeat(300px,3);
 }
+.one {
+    height: 280px;
+    width: 230px;
+    background-image: url(photos/adetola-afolabi-x0A7wgQmmdk-unsplash.jpg);
+    background-size: over;
+    margin-left: 50px;
+}
+.two{
+    height: 280px;
+    width: 230px;
+    background-image: url(photos/christina-wocintechchat-com-SJvDxw0azqw-unsplash.jpg);
+    background-size: over;
+    margin-left: 50px;
+}
+.three {
+    height: 280px;
+    width: 230px;
+    background-image: url(photos/linkedin-sales-solutions-pAtA8xe_iVM-unsplash.jpg);
+    background-size: over;
+    margin-left: 50px;
+}
+.four {
+    height: 280px;
+    width: 230px;
+    background-image: url(photos/ali-morshedlou-WMD64tMfc4k-unsplash.jpg);
+    background-size: over;
+    margin-left: 50px;
+}
+.blue1 {
+    width: 180px;
+    height: 600px;
+    background-image : linear-gradient(rgb(122, 85, 192) 40%,white 30% );
+    padding-left : 80px;
+    margin-left: 40px;
+}
+.blue1:hover div {
+    display: none;
+}
+.blue1:hover {
+    box-shadow: 3px 3px  10px rgba(0, 0, 0, .4);
+}
+.blue2 {
+    width: 180px;
+    height: 600px;
+    background-image : linear-gradient(rgb(122, 85, 192) 40%,white 30% );
+    padding-left : 80px;
+    margin-left: 40px;
+}
+.blue2:hover div {
+    display: none;
+}
+.blue2:hover {
+    box-shadow: 3px 3px 10px  rgba(0, 0, 0, .4);
+}
+.blue4 {
+    width: 180px;
+    height: 600px;
+    background-image : linear-gradient(rgb(122, 85, 192) 40%,white 30% );
+    padding-left : 80px;
+    margin-left: 40px;
+}
+.blue4:hover div {
+    display: none;
+}
+.blue4:hover {
+    box-shadow: 3px 3px 10px  rgba(0, 0, 0, .4);
+}
+.blue3 {
+    width: 180px;
+    height: 600px;
+    background-image : linear-gradient(rgb(122, 85, 192) 40%,white 30% );
+    padding-left : 80px;
+    margin-left: 40px;
+}
+.blue3:hover div {
+    display: none;
+}
+.blue3:hover {
+    box-shadow: 3px 3px 10px  rgba(0, 0, 0, .4);
+}
+.one:hover {
+    transform: scale(1.1);
+}
+.two:hover {
+    transform: scale(1.1);
+}
+.three:hover {
+    transform: scale(1.1);
+}
+.four:hover {
+    transform: scale(1.1);
+}
