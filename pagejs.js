@@ -162,3 +162,4 @@ document.querySelector('.f2').children[5].onclick= function submit2(e) {
         document.querySelector('.f2').children[5].innerHTML='already submitted';
     }
 }
+
