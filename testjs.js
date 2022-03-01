@@ -1,3 +1,4 @@
+
 document.querySelector('.container').children[1].children[0].onmouseenter= function white() {
     document.querySelector('.container').children[1].children[0].classList.add('gras');
 };
@@ -39,7 +40,7 @@ document.querySelector('.container').children[1].children[6].onmouseenter= funct
 };
 document.querySelector('.container').children[1].children[6].onmouseout= function white() {
     document.querySelector('.container').children[1].children[6].classList.remove('gras');
-};
+}; 
 document.querySelector('.img').children[0].children[1].children[0].onmouseenter= function explore() {
     document.querySelector('.img').children[0].children[1].children[0].classList.remove('c');
     document.querySelector('.img').children[0].children[1].children[0].classList.add('explore');
