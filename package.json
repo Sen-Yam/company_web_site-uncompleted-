@@ -1,0 +1,15 @@
+{
+  "name": "projectdev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "code.js",
+  "scripts": {
+    "start": "node code.js"
+  },
+  "author": "Yamina",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "lodash": "^4.17.21"
+  }
+}
