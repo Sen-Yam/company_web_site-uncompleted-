@@ -27,6 +27,4 @@
     console.log('listen to request');
  }); 
 
- fs.mkdir('./app.js' , (err) =>{
-     if(err) throw err;
- })
+ 
