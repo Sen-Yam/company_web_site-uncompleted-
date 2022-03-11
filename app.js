@@ -1,11 +1,17 @@
+var express=require('express') ;
+var app=express() ;
+var mongoose=require('mongoose') ;
+var url_db = 'mongodb+srv://SenYam:Tassili1938@senyam.mosbo.mongodb.net/new_db?retryWrites=true&w=majority';
+mongoose.connect(url_db  , {useNewUrlParser : true , useUnifiedTopology : true} )
+    .then((result) => {
+        app.listen(2000);
+    });
 
 
-express=require('express') ;
-var app=express() ; 
 app.set('view engine','ejs'); 
-app.listen(2000 , 'localhost' ,(err) => {
+/* app.listen(2000 , 'localhost' ,(err) => {
     if(err) throw err;
-});
+}); */
 
 app.get('/'  , (req , res) => {
     res.render('codeejs' , {array : [
