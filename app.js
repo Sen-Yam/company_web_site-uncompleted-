@@ -15,8 +15,8 @@ app.set('view engine','ejs');
     if(err) throw err;
 }); */
 app.use(express.urlencoded({extended : true}));
- app.get('/blogs'  , (req , res) => {
-     newData.find().sort({createdAt : -1})
+ app.get('/'  , (req , res) => {
+     newData.find()
      .then((result) => {
         res.render('codeejs' , {Dataejs : result});
      })
@@ -44,12 +44,13 @@ app.get('/db' , (req , res) => {
 });
 
 //database :
-app.post('/blogs' ,(req , res) => {
+app.post('/' ,(req , res) => {
     console.log(req.body);
     var data = new newData(req.body);
     data.save()
     .then((result) => {
-        res.send(result);
+        res.redirect('/blogs');
+
     }) 
 });
 app.get('/form' , (req , res)=> {
