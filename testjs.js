@@ -1,4 +1,4 @@
-document.querySelector('.container').children[1].children[0].onmouseenter= function white() {
+ /* document.querySelector('.container').children[1].children[0].onmouseenter= function white() {
     document.querySelector('.container').children[1].children[0].classList.add('gras');
 };
 document.querySelector('.container').children[1].children[0].onmouseout= function white() {
@@ -39,7 +39,31 @@ document.querySelector('.container').children[1].children[6].onmouseenter= funct
 };
 document.querySelector('.container').children[1].children[6].onmouseout= function white() {
     document.querySelector('.container').children[1].children[6].classList.remove('gras');
-}; 
+};  
+
+ */
+console.log(document.querySelectorAll('.container > div > .btn'));
+document.querySelectorAll('.container > div > .btn').forEach((elm,i)=>{
+    
+    elm.onmouseenter=function(){
+        elm.classList.add("gras")
+    }
+    elm.onmouseout=function(){
+        elm.classList.remove("gras")
+  }
+
+
+})
+
+
+
+
+
+
+
+
+
+
 document.querySelector('.img').children[0].children[1].children[0].onmouseenter= function explore() {
     document.querySelector('.img').children[0].children[1].children[0].classList.remove('c');
     document.querySelector('.img').children[0].children[1].children[0].classList.add('explore');
@@ -162,4 +186,15 @@ document.querySelector('.f2').children[5].onclick= function submit2(e) {
         document.querySelector('.f2').children[5].innerHTML='already submitted';
     }
 }
+window.scrollTo({
+    behavior : "smooth"
+})
 
+
+
+/* document.querySelector('p').innerHtml=".." ;
+document.querySelector('body').children[1].innerHtml=".." ;
+document.getElementById('first').innerHtml=".." ;
+dicument.getElementsByClassName('special').innerHtml=".." ;
+
+ */
