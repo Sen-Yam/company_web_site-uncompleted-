@@ -9,15 +9,15 @@
     </head>
 
     <body style="overflow: scroll ; height: 6000px;">
-       <% Dataejs.forEach(element => { %>
-           <div style="display: flex;">
-            <p style="margin-left: 100px;"><%= element.Name %> </p>
-            <p style="margin-left: 100px;"><%= element.Surname %> </p>
-            <p style="margin-left: 100px;"><%= element.Age %> </p>
-        </div>
-           
-      <% }); %> 
-      <%- include('new.ejs') %> 
+      <% 
+        data1.forEach(element => { %>
+            <div style="display : flex;">
+                <p style="margin-left: 50px;"><%= element.Name   %></p>
+                <p style="margin-left: 50px;"><%= element.Surname   %></p>
+                <p style="margin-left: 50px;"><%= element.Age   %></p>
+                </div>
+         <% }); %>
+         
         <div class="container" >
             <h1>ZomBiz</h1>
             <div style="display: flex ; margin-left: 400px;" >

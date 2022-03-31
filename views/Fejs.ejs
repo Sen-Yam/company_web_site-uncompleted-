@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <button>Add a member</button>
+
+<form action="/f" method="POST">
+    <button type="submit" id="F" style="margin-top: 50px;">SUBMIT</button> <br>
+    <input type="email" placeholder="Enter ur email " class="input" name="Email" required>
+    
+</form>
+<style>
+    
+    .input {
+        background-color: white;
+        padding : 10px;
+        color : black;
+        font-size: 30px;
+        margin : 15px;
+    }
+    button {
+        border : none ; background-color : rgb(233, 176, 19) ; color : white ; padding: 10px ; 
+    font-size: 20px; 
+    }
+    button:hover {
+        color : white;
+        background-color: black;
+    }
+</style>
+
+<script>
+    console.log(   document.querySelectorAll('button')[0]);
+     document.querySelectorAll('button')[0].onclick= () => {
+         var New=document.createElement('input');
+         New.setAttribute("placeholder" , "Enter ur email");
+         New.setAttribute("name" , "Email");
+         New.classList.add('input');
+        document.querySelector('body').appendChild(New);
+    } 
+    document.getElementById('F').onclick=() => {
+        document.body.innerHTML='<div> Submitted Successfuly </div>';
+        document.querySelector('div').classList.add('button');
+    };
+</script>
+
+
+</body>
+</html>
